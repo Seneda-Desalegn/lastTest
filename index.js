@@ -1,18 +1,18 @@
 const express = require('express');
 // const sqlite3 = require('sqlite3');
-const bodyParser = require('body-parser');
+// const bodyParser = require('body-parser');
 // const cors = require('cors');
 
 const app = express();
 const port = 3000;
 
 // app.use(cors()); 
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json());
+// app.use(bodyParser.urlencoded({ extended: false }));
+// app.use(bodyParser.json());
 
 // const db = new sqlite3.Database('score_table.db');
 // db.run('CREATE TABLE IF NOT EXISTS users (id INTEGER PRIMARY KEY, name TEXT, score INTEGER)');
-
+console.log("hello world welcome");
 app.get('/', (req, res) => {
   res.send("hello world");
 });
